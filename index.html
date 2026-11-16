@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disha Sinha</title>
+<meta name="description" content="Disha Sinha: GIS Analyst at SPAARC and geographer studying urban flooding, environmental justice and coastal wetland loss. Geography PhD applicant, Fall 2027.">
+<meta name="author" content="Disha Sinha">
+<meta name="theme-color" content="#071c1c">
+<link rel="canonical" href="https://sinha-disha.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Disha Sinha">
+<meta property="og:description" content="Geographer studying how land, water and people shape one another.">
+<meta property="og:url" content="https://sinha-disha.github.io/">
+<meta property="og:image" content="https://sinha-disha.github.io/assets/img/apple-touch-icon.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<!-- Theme before first paint: a saved choice wins, otherwise the system setting -->
+<script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(t!=="light"&&t!=="dark"){t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"}document.documentElement.setAttribute("data-theme",t);document.documentElement.classList.add("js")})();</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Disha Sinha",
+  "url": "https://sinha-disha.github.io/",
+  "jobTitle": "GIS Analyst",
+  "worksFor": { "@type": "Organization", "name": "Spatial Analytics and Research Consulting (SPAARC)" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Indiana State University" },
+    { "@type": "CollegeOrUniversity", "name": "Jadavpur University" },
+    { "@type": "CollegeOrUniversity", "name": "Dr. B. R. Ambedkar University Delhi" }
+  ],
+  "knowsAbout": ["Geographic Information Systems", "Remote sensing", "Urban flooding", "Environmental justice", "Coastal wetland loss"],
+  "sameAs": [
+    "https://orcid.org/0009-0003-7781-6905",
+    "https://scholar.google.com/citations?user=7KhV5akAAAAJ",
+    "https://www.linkedin.com/in/dishasinha/"
+  ]
+}
+</script>
+<style>
+  :root, [data-theme="dark"] {
+    --bg: #071c1c;
+    --bg-alt: #0b2626;
+    --header: rgba(7, 28, 28, 0.85);
+    --card: #0d2d2c;
+    --border: #1c4443;
+    --text: #e6f4f1;
+    --text-dim: #93b5b0;
+    --accent: #2dd4bf;
+    --accent-dim: #5eead4;
+    --on-accent: #042321;
+    --chip: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.35);
+  }
+  [data-theme="light"] {
+    --bg: #f0faf8;
+    --bg-alt: #e0f2ef;
+    --header: rgba(240, 250, 248, 0.85);
+    --card: #ffffff;
+    --border: #c3e2dd;
+    --text: #0b2b2a;
+    --text-dim: #45615e;
+    --accent: #0f766e;
+    --accent-dim: #115e59;
+    --on-accent: #ffffff;
+    --chip: #ffffff;
+    --shadow: rgba(7, 59, 58, 0.12);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding-top: 72px;
+    transition: background-color .2s ease, color .2s ease;
+  }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 1.75rem; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* ---------- Header ---------- */
+  header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    height: 72px; display: flex; align-items: center;
+    background: var(--header);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 1rem; }
+  .brand { display: inline-flex; align-items: center; gap: 0.6rem; font-weight: 700; letter-spacing: 0.01em; text-decoration: none; }
+  .brand img { width: 30px; height: 30px; }
+  .logo-light { display: none; }
+  [data-theme="light"] .logo-light { display: block; }
+  [data-theme="light"] .logo-dark { display: none; }
+  .nav-right { display: flex; align-items: center; gap: 0.4rem; }
+  nav ul { list-style: none; display: flex; gap: 1.3rem; }
+  nav a { color: var(--text-dim); text-decoration: none; font-size: 0.92rem; }
+  nav a:hover, nav a.active { color: var(--accent); }
+  .icon-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 38px; height: 38px; margin-left: 0.6rem;
+    background: none; border: 1px solid var(--border); border-radius: 8px;
+    color: var(--text-dim); cursor: pointer;
+  }
+  .icon-btn:hover { color: var(--accent); border-color: var(--accent); }
+  .icon-btn svg { width: 18px; height: 18px; }
+  .i-sun { display: none; }
+  [data-theme="light"] .i-sun { display: block; }
+  [data-theme="light"] .i-moon { display: none; }
+  .nav-toggle { display: none; }
+
+  /* ---------- Hero ---------- */
+  .hero { padding: 4rem 0 3rem; border-bottom: 1px solid var(--border); }
+  .hero-inner { display: flex; align-items: center; gap: 3rem; }
+  .hero-text { flex: 1 1 420px; min-width: 0; }
+  .hero-photo {
+    flex: 0 0 220px; width: 220px; height: 220px;
+    border-radius: 20px; overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: 0 0 0 4px var(--bg-alt), 0 12px 30px var(--shadow);
+  }
+  .hero-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .eyebrow { color: var(--accent); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.9rem; }
+  .hero h1 { font-size: clamp(2rem, 5vw, 2.8rem); font-weight: 700; line-height: 1.2; margin-bottom: 0.6rem; }
+  .hero .role { font-size: 1.15rem; color: var(--text-dim); margin-bottom: 0.4rem; }
+  .hero .place { font-size: 0.92rem; color: var(--text-dim); margin-bottom: 1.4rem; }
+  .hero .summary { max-width: 620px; color: var(--text-dim); font-size: 1.02rem; margin-bottom: 1.8rem; }
+  .links { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 0.45rem;
+    padding: 0.6rem 1.1rem; border-radius: 8px;
+    text-decoration: none; font-size: 0.92rem; font-weight: 600;
+    border: 1px solid var(--border); color: var(--text);
+  }
+  .btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+  .btn.primary { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+  .btn.primary:hover { background: var(--accent-dim); border-color: var(--accent-dim); }
+  .btn:not(.primary):hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ---------- Sections ---------- */
+  section { padding: 3rem 0; border-bottom: 1px solid var(--border); }
+  section:last-of-type { border-bottom: none; }
+  h2 { font-size: 1.4rem; margin-bottom: 1.8rem; font-weight: 700; }
+  h2 .tag { color: var(--accent); font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.95rem; font-weight: 500; margin-right: 0.5rem; }
+  .prose p { color: var(--text-dim); max-width: 680px; margin-bottom: 1rem; }
+  .prose p:last-child { margin-bottom: 0; }
+  .prose b { color: var(--text); font-weight: 600; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.4rem; }
+  .chips span {
+    font-size: 0.82rem; padding: 0.3rem 0.75rem; border-radius: 999px;
+    border: 1px solid var(--border); background: var(--bg-alt); color: var(--text);
+  }
+
+  .timeline { display: flex; flex-direction: column; gap: 1.8rem; }
+  .job { display: flex; gap: 1rem; }
+  .logo-chip {
+    flex-shrink: 0; width: 48px; height: 48px; border-radius: 10px;
+    background: var(--chip); padding: 6px;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 2px 8px var(--shadow);
+    border: 1px solid var(--border);
+  }
+  .logo-chip img { width: 100%; height: 100%; object-fit: contain; }
+  .logo-chip.flush { padding: 0; overflow: hidden; }
+  .job-body { min-width: 0; flex: 1; }
+  .role-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.5rem; margin-bottom: 0.3rem; }
+  .role-line .title { font-weight: 700; font-size: 1.05rem; }
+  .role-line .org { color: var(--accent); font-weight: 600; text-decoration: none; }
+  .role-line a.org:hover { text-decoration: underline; }
+  .role-line .dates { color: var(--text-dim); font-size: 0.85rem; margin-left: auto; white-space: nowrap; }
+  .job ul { margin-top: 0.5rem; padding-left: 1.1rem; color: var(--text-dim); font-size: 0.95rem; }
+  .job li { margin-bottom: 0.35rem; }
+
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.2rem; }
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 1.3rem; display: flex; gap: 1rem; align-items: flex-start;
+  }
+  .card .deg { font-weight: 700; margin-bottom: 0.2rem; line-height: 1.35; }
+  .card .inst { color: var(--accent); font-size: 0.92rem; margin-bottom: 0.3rem; }
+  .card .meta { color: var(--text-dim); font-size: 0.86rem; }
+
+  .pub-list { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+  .pub-list li {
+    display: flex; gap: 0.75rem; align-items: flex-start;
+    font-size: 0.93rem; color: var(--text-dim);
+    padding-bottom: 1rem; border-bottom: 1px solid var(--border);
+  }
+  .pub-list li:last-child { border-bottom: none; padding-bottom: 0; }
+  .pub-list .ptitle { color: var(--text); font-weight: 600; }
+  .pub-list .me { color: var(--text); font-weight: 700; }
+  .pub-list .venue { font-style: italic; }
+  .pub-list a.doi { color: var(--accent); text-decoration: none; word-break: break-all; }
+  .pub-list a.doi:hover { text-decoration: underline; }
+  .entry-icon { flex-shrink: 0; width: 18px; height: 18px; color: var(--accent); margin-top: 0.2rem; }
+  .badge {
+    display: inline-block; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.04em;
+    text-transform: uppercase; padding: 0.1rem 0.5rem; border-radius: 999px;
+    border: 1px solid var(--accent); color: var(--accent); margin-left: 0.4rem; vertical-align: 1px;
+  }
+
+  .skills { display: grid; grid-template-columns: max-content 1fr; gap: 0.7rem 1.6rem; font-size: 0.95rem; }
+  .skills dt { font-weight: 700; }
+  .skills dd { color: var(--text-dim); }
+
+  .achv { display: flex; flex-direction: column; gap: 0.9rem; }
+  .achv .item { display: flex; gap: 0.8rem; align-items: flex-start; }
+  .achv .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-top: 0.55rem; flex-shrink: 0; }
+  .achv b { display: block; }
+  .achv span { color: var(--text-dim); font-size: 0.92rem; }
+
+  footer { padding: 2.5rem 0 3rem; text-align: center; color: var(--text-dim); font-size: 0.85rem; border-top: 1px solid var(--border); }
+  footer .links { justify-content: center; margin-bottom: 1.2rem; }
+
+  /* Reveal on scroll (only when JS is running and motion is welcome) */
+  @media (prefers-reduced-motion: no-preference) {
+    .js .reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
+    .js .reveal.in { opacity: 1; transform: none; }
+  }
+
+  @media (max-width: 760px) {
+    .nav-toggle { display: inline-flex; }
+    nav { position: absolute; top: 72px; left: 0; right: 0; background: var(--bg); border-bottom: 1px solid var(--border); display: none; }
+    nav.open { display: block; }
+    nav ul { flex-direction: column; gap: 0; padding: 0.5rem 1.75rem 1rem; }
+    nav a { display: block; padding: 0.55rem 0; font-size: 1rem; }
+  }
+  @media (max-width: 680px) {
+    .wrap { padding: 0 1rem; }
+    .hero-inner { flex-direction: column-reverse; gap: 1.8rem; text-align: center; }
+    .hero-photo { flex-basis: auto; width: 160px; height: 160px; }
+    .hero .summary { margin-left: auto; margin-right: auto; }
+    .links { justify-content: center; }
+    .grid-2 { grid-template-columns: 1fr; }
+    .role-line .dates { margin-left: 0; width: 100%; }
+    .skills { grid-template-columns: 1fr; gap: 0.2rem; }
+    .skills dd { margin-bottom: 0.6rem; }
+  }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+  <symbol id="i-scholar" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></symbol>
+  <symbol id="i-orcid" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  <symbol id="i-article" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15z"/><path d="M6.5 17A2.5 2.5 0 0 0 4 19.5 2.5 2.5 0 0 0 6.5 22H20v-5"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M19 10a7 7 0 0 1-14 0M12 17v5M8 22h8"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Disha Sinha, back to top">
+      <img class="logo-dark" src="assets/img/logo.svg" alt="" width="30" height="30">
+      <img class="logo-light" src="assets/img/logo-dark.svg" alt="" width="30" height="30">
+      <span>Disha Sinha</span>
+    </a>
+    <div class="nav-right">
+      <nav id="primary-nav" aria-label="Sections">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#honors">Honors</a></li>
+        </ul>
+      </nav>
+      <button class="icon-btn theme-toggle" type="button" aria-label="Toggle light and dark theme">
+        <svg class="i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <svg aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero" aria-label="Introduction">
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <div class="eyebrow">Geography PhD Applicant · Fall 2027</div>
+      <h1>Disha Sinha</h1>
+      <p class="role">GIS Analyst · <a href="https://www.spaarc.org/" target="_blank" rel="noopener">Spatial Analytics and Research Consulting (SPAARC)</a></p>
+      <p class="place">Austin, Texas</p>
+      <p class="summary">
+        I study how land, water and people shape one another: who carries the burden when a city floods,
+        and how decisions made for the convenience of people reshape entire landscapes. My work spans
+        urban stormwater flooding and environmental justice in Chicago and coastal wetland loss in Louisiana.
+      </p>
+      <div class="links">
+        <a class="btn primary" href="mailto:dishasinha.2707@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/dishasinha/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+        <a class="btn" href="https://scholar.google.com/citations?user=7KhV5akAAAAJ&amp;hl=en" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-scholar"/></svg>Scholar</a>
+        <a class="btn" href="https://orcid.org/0009-0003-7781-6905" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-orcid"/></svg>ORCID</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <!-- To use a photo: add assets/img/photo.jpg and replace the <img> tag below with
+           <img src="assets/img/photo.jpg" alt="Disha Sinha" width="440" height="440" fetchpriority="high" decoding="async"> -->
+      <img src="assets/img/favicon.svg" alt="" width="220" height="220" fetchpriority="high" decoding="async">
+    </div>
+  </div>
+</section>
+
+<section id="about" class="reveal">
+  <div class="wrap prose">
+    <h2><span class="tag">01</span>About</h2>
+    <p>
+      I grew up in Kolkata, on the East Coast of India, one of the least climate-resilient cities in the world.
+      I didn't learn about climate change only in theory: every summer brought a new record high, and the flooding grew worse.
+      That experience is why I study how environmental risk is shaped as much by who holds power as by the climate itself.
+    </p>
+    <p>
+      My research began at the <b>Field Museum</b> in Chicago, measuring how restored prairie and woodland absorb stormwater
+      compared with turf grass. At <b>Indiana State University</b>, my master's thesis mapped how flood risk across Chicago
+      relates to household income, racial identity and immigrant origin. Since 2023, at <b>SPAARC</b>, I have built the
+      geospatial databases, analyses and maps behind work on coastal land loss in Louisiana, including the Louisiana Coastal Lawsuit.
+    </p>
+    <div class="chips" aria-label="Research interests">
+      <span>Urban stormwater flooding</span>
+      <span>Environmental justice</span>
+      <span>Flood risk &amp; social vulnerability</span>
+      <span>Coastal wetland loss</span>
+      <span>Nature-based solutions</span>
+      <span>GIS &amp; remote sensing</span>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="reveal">
+  <div class="wrap">
+    <h2><span class="tag">02</span>Experience</h2>
+    <div class="timeline">
+
+      <div class="job">
+        <div class="logo-chip" aria-hidden="true">
+          <img src="assets/logos/spaarc.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+        </div>
+        <div class="job-body">
+          <div class="role-line">
+            <span class="title">GIS Analyst</span>
+            <a class="org" href="https://www.spaarc.org/" target="_blank" rel="noopener">SPAARC</a>
+            <span class="dates">Sep 2023 — Present</span>
+          </div>
+          <ul>
+            <li>Create GIS analyses and cartographic products for projects that build geospatial databases for stakeholders across coastal Louisiana and Texas.</li>
+            <li>Develop spatial analyses, data analytics and mapping to address coastal land loss in Louisiana as part of the Louisiana Coastal Lawsuit.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="logo-chip" aria-hidden="true">
+          <img src="assets/logos/indstate-mark.svg" alt="" width="48" height="48" loading="lazy" decoding="async">
+        </div>
+        <div class="job-body">
+          <div class="role-line">
+            <span class="title">Graduate Teaching Assistant</span>
+            <a class="org" href="https://indianastate.edu/academics/colleges/arts-sciences/ees" target="_blank" rel="noopener">Indiana State University</a>
+            <span class="dates">Aug 2021 — Aug 2023</span>
+          </div>
+          <ul>
+            <li>Developed and taught ENVI 372: GIS Applications, with lab-based training in ArcGIS Pro, ArcGIS Online and Survey123 for undergraduates.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="logo-chip" aria-hidden="true">
+          <img src="assets/logos/fieldmuseum.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+        </div>
+        <div class="job-body">
+          <div class="role-line">
+            <span class="title">Research Intern</span>
+            <a class="org" href="https://www.fieldmuseum.org/department/keller-science-action-center" target="_blank" rel="noopener">Keller Science Action Center, The Field Museum</a>
+            <span class="dates">Jun 2018 — Aug 2018</span>
+          </div>
+          <ul>
+            <li>Studied urban stormwater flooding in Chicagoland using field GIS techniques.</li>
+            <li>Compared water infiltration rates of soils in restored natural areas and turf grass in Chicago's urban parks using statistical models in R, and mapped areas for intervention.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="education" class="reveal">
+  <div class="wrap">
+    <h2><span class="tag">03</span>Education</h2>
+    <div class="grid-2">
+      <div class="card">
+        <div class="logo-chip" aria-hidden="true"><img src="assets/logos/indstate-mark.svg" alt="" width="48" height="48" loading="lazy" decoding="async"></div>
+        <div>
+          <div class="deg">M.A. in Geography and Sustainability</div>
+          <div class="inst">Indiana State University</div>
+          <div class="meta">2021 — 2023 · Specialization in GIS</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="logo-chip" aria-hidden="true"><img src="assets/logos/jadavpur.svg" alt="" width="48" height="48" loading="lazy" decoding="async"></div>
+        <div>
+          <div class="deg">PG Diploma in GIS and Remote Sensing</div>
+          <div class="inst">Jadavpur University</div>
+          <div class="meta">2019 — 2021 · Thesis: vegetation change on Namkhana and Lothian islands, Sundarbans</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="logo-chip" aria-hidden="true"><img src="assets/logos/ambedkar.png" alt="" width="48" height="48" loading="lazy" decoding="async"></div>
+        <div>
+          <div class="deg">M.A. in Environment and Development</div>
+          <div class="inst">Dr. B. R. Ambedkar University Delhi</div>
+          <div class="meta">2017 — 2019</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="logo-chip" aria-hidden="true"><img src="assets/logos/jadavpur.svg" alt="" width="48" height="48" loading="lazy" decoding="async"></div>
+        <div>
+          <div class="deg">B.A. in History</div>
+          <div class="inst">Jadavpur University</div>
+          <div class="meta">2014 — 2017</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="publications" class="reveal">
+  <div class="wrap">
+    <h2><span class="tag">04</span>Publications &amp; Talks</h2>
+    <ul class="pub-list">
+      <li>
+        <svg class="entry-icon" aria-hidden="true"><use href="#i-article"/></svg>
+        <span>Day, J., Lane, R., Moerschbaecher, M., Clark, H. C., Allison, M., Meselhe, E., Kolker, A. S., Hunter, R., Kemp, P., Ko, J.-Y., Twilley, R., White, J. R., DeLaune, R., Stephens, J. R., Chenevert, C., Sanchez, E. F., &amp; <span class="me">Sinha, D.</span> (2025).
+        <span class="ptitle">Patterns and mechanisms of wetland change in the Breton Sound estuary, Mississippi River delta: A review.</span>
+        <span class="venue">Estuarine, Coastal and Shelf Science, 313</span>, 109065.
+        <a class="doi" href="https://doi.org/10.1016/j.ecss.2024.109065" target="_blank" rel="noopener">doi:10.1016/j.ecss.2024.109065</a></span>
+      </li>
+      <li>
+        <svg class="entry-icon" aria-hidden="true"><use href="#i-mic"/></svg>
+        <span><span class="me">Sinha, D.</span>, &amp; Aldrich, S. (2023).
+        <span class="ptitle">Climate change and urban flooding: Impacts and associated vulnerabilities of stormwater flooding in Chicago.</span>
+        <span class="venue">Annual Meeting of the American Association of Geographers</span>, Denver, CO.<span class="badge">Talk</span></span>
+      </li>
+      <li>
+        <svg class="entry-icon" aria-hidden="true"><use href="#i-book"/></svg>
+        <span><span class="me">Sinha, D.</span> (2023).
+        <span class="ptitle">Urban stormwater flooding: Inequal stress and associated vulnerabilities in Chicago, IL, USA.</span>
+        <span class="venue">Master's thesis, Indiana State University</span>.
+        <a class="doi" href="https://doi.org/10.5281/zenodo.24098241" target="_blank" rel="noopener">doi:10.5281/zenodo.24098241</a><span class="badge">Thesis</span></span>
+      </li>
+      <li>
+        <svg class="entry-icon" aria-hidden="true"><use href="#i-article"/></svg>
+        <span>Giles, M., Janney, B., <span class="me">Sinha, D.</span>, &amp; Moore Powell, K. (2020).
+        <span class="ptitle">Show your urban water flow: Comparing the water infiltration rates through the soils of restored natural areas and turf grass in Chicago's urban parks.</span>
+        <span class="venue">The Toronto Urban Journal, 2</span>(1), 109–123.
+        <a class="doi" href="https://doi.org/10.5281/zenodo.24096819" target="_blank" rel="noopener">doi:10.5281/zenodo.24096819</a></span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <div class="wrap">
+    <h2><span class="tag">05</span>Skills</h2>
+    <dl class="skills">
+      <dt>GIS</dt><dd>ArcGIS Pro, ArcGIS Online, Survey123, QGIS, ModelBuilder, other Esri products</dd>
+      <dt>Remote sensing</dt><dd>ERDAS Imagine, ILWIS, Agisoft Metashape, drones</dd>
+      <dt>Programming</dt><dd>R, Python</dd>
+      <dt>Methods</dt><dd>Cartography, geospatial analysis (hotspots, clusters, outliers), flood susceptibility indices, LULC and vegetation indices (NDVI, AVI), network analysis (Gephi)</dd>
+    </dl>
+  </div>
+</section>
+
+<section id="honors" class="reveal">
+  <div class="wrap">
+    <h2><span class="tag">06</span>Honors &amp; Awards</h2>
+    <div class="achv">
+      <div class="item"><div class="dot"></div><div><b>Benjamin Moulton Scholarship for Excellence in Geography</b><span>Indiana State University, 2022–2023</span></div></div>
+      <div class="item"><div class="dot"></div><div><b>Award of Academic Honor (Graduate Level)</b><span>Indiana State University, every semester from Fall 2021 to Spring 2023</span></div></div>
+      <div class="item"><div class="dot"></div><div><b>Graduate Teaching Assistantship</b><span>Indiana State University, 2021–2023</span></div></div>
+      <div class="item"><div class="dot"></div><div><b>Academic Merit Scholarship</b><span>Ambedkar University Delhi, 2017–2019</span></div></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a class="btn" href="mailto:dishasinha.2707@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email</a>
+      <a class="btn" href="https://www.linkedin.com/in/dishasinha/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+      <a class="btn" href="https://scholar.google.com/citations?user=7KhV5akAAAAJ&amp;hl=en" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-scholar"/></svg>Scholar</a>
+      <a class="btn" href="https://orcid.org/0009-0003-7781-6905" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-orcid"/></svg>ORCID</a>
+    </div>
+    &copy; <span id="year">2026</span> Disha Sinha
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+
+  // Theme toggle: remember the choice
+  document.querySelector(".theme-toggle").addEventListener("click", function () {
+    var next = root.getAttribute("data-theme") === "light" ? "dark" : "light";
+    root.setAttribute("data-theme", next);
+    document.querySelector('meta[name="theme-color"]').setAttribute("content", next === "light" ? "#f0faf8" : "#071c1c");
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+
+  // Mobile menu
+  var nav = document.getElementById("primary-nav");
+  var toggle = document.querySelector(".nav-toggle");
+  toggle.addEventListener("click", function () {
+    var open = nav.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  nav.addEventListener("click", function (e) {
+    if (e.target.tagName === "A") { nav.classList.remove("open"); toggle.setAttribute("aria-expanded", "false"); }
+  });
+
+  if ("IntersectionObserver" in window) {
+    // Reveal sections as they scroll into view
+    var reveal = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); reveal.unobserve(e.target); } });
+    }, { rootMargin: "0px 0px -8% 0px" });
+    document.querySelectorAll(".reveal").forEach(function (el) { reveal.observe(el); });
+
+    // Highlight the nav link of the section in view
+    var links = {};
+    nav.querySelectorAll("a").forEach(function (a) { links[a.getAttribute("href").slice(1)] = a; });
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var a = links[e.target.id];
+        if (a && e.isIntersecting) {
+          nav.querySelectorAll("a.active").forEach(function (x) { x.classList.remove("active"); });
+          a.classList.add("active");
+        }
+      });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    document.querySelectorAll("section[id]").forEach(function (s) { spy.observe(s); });
+  } else {
+    document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("in"); });
+  }
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
