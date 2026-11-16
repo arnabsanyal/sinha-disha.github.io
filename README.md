@@ -10,6 +10,7 @@ It is a single static page with no build step: `index.html` holds the markup, st
 | --- | --- |
 | `index.html` | The whole site |
 | `assets/img/logo.svg`, `logo-dark.svg` | Site logo for dark and light backgrounds |
+| `assets/img/photo.jpg` | Profile photo (hero and link previews) |
 | `assets/img/favicon.svg`, `apple-touch-icon.png` | Favicon and home-screen icon |
 | `assets/logos/` | Institution logos used in Experience and Education |
 | `scripts/make_logo.py` | Regenerates the logo and favicon SVGs |
@@ -18,7 +19,7 @@ It is a single static page with no build step: `index.html` holds the markup, st
 
 - **Content:** edit `index.html` directly. Each section (`#about`, `#experience`, `#education`, `#publications`, `#skills`, `#honors`) is a plain block of HTML.
 - **Colours:** the teal palette is the set of CSS variables at the top of `index.html`, one block for dark and one for light.
-- **Photo:** add `assets/img/photo.jpg` and swap it in where the comment in the hero section says.
+- **Photo:** replace `assets/img/photo.jpg` (square, at least 360 × 360).
 - **Logo:** change `PALETTES` or the geometry in `scripts/make_logo.py`, then run `python3 scripts/make_logo.py` from the repository root.
 
 ## Logo credits
