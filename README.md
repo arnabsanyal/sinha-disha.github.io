@@ -24,4 +24,6 @@ It is a single static page with no build step: `index.html` holds the markup, st
 
 ## Logo credits
 
-Institution logos belong to their owners and are used only to identify affiliations: Indiana State University (Wikimedia Commons, public domain), Jadavpur University and Dr. B. R. Ambedkar University Delhi (Wikipedia, non-free logos), the Field Museum (historic logo, Wikimedia Commons, public domain) and SPAARC (from spaarc.org).
+Institution logos belong to their owners and are used only to identify affiliations: the Indiana State University seal, Jadavpur University and Dr. B. R. Ambedkar University Delhi (Wikipedia, non-free logos), the Field Museum (historic logo, Wikimedia Commons, public domain) and SPAARC (from spaarc.org).
+
+Logos sit directly on the page with no background box. The ones that would disappear on one of the themes come in two files, `-dark` (shown in light mode) and `-light` (shown in dark mode): the Indiana State seal and the Field Museum logo, recoloured from black line art, and SPAARC, with its blue lettering lightened.

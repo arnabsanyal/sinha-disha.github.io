@@ -159,16 +159,16 @@
   }
 
   .timeline { display: flex; flex-direction: column; gap: 1.8rem; }
-  .job { display: flex; gap: 1rem; }
+  .job { display: flex; gap: 1.1rem; }
   .logo-chip {
-    flex-shrink: 0; width: 48px; height: 48px; border-radius: 10px;
-    background: var(--chip); padding: 6px;
+    flex-shrink: 0; width: 72px; height: 72px;
     display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 2px 8px var(--shadow);
-    border: 1px solid var(--border);
   }
   .logo-chip img { width: 100%; height: 100%; object-fit: contain; }
-  .logo-chip.flush { padding: 0; overflow: hidden; }
+  /* Monochrome logos come in two inks; show the one that suits the theme */
+  .logo-chip .ink-light { display: none; }
+  [data-theme="dark"] .logo-chip .ink-light { display: block; }
+  [data-theme="dark"] .logo-chip .ink-dark { display: none; }
   .job-body { min-width: 0; flex: 1; }
   .role-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.5rem; margin-bottom: 0.3rem; }
   .role-line .title { font-weight: 700; font-size: 1.05rem; }
@@ -362,7 +362,7 @@
 
       <div class="job">
         <div class="logo-chip" aria-hidden="true">
-          <img src="assets/logos/spaarc.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+          <img class="ink-dark" src="assets/logos/spaarc-dark.png" alt="" width="72" height="72" loading="lazy" decoding="async"><img class="ink-light" src="assets/logos/spaarc-light.png" alt="" width="72" height="72" loading="lazy" decoding="async">
         </div>
         <div class="job-body">
           <div class="role-line">
@@ -380,7 +380,7 @@
 
       <div class="job">
         <div class="logo-chip" aria-hidden="true">
-          <img src="assets/logos/indstate-mark.svg" alt="" width="48" height="48" loading="lazy" decoding="async">
+          <img class="ink-dark" src="assets/logos/indstate-seal-dark.svg" alt="" width="72" height="72" loading="lazy" decoding="async"><img class="ink-light" src="assets/logos/indstate-seal-light.svg" alt="" width="72" height="72" loading="lazy" decoding="async">
         </div>
         <div class="job-body">
           <div class="role-line">
@@ -397,7 +397,7 @@
 
       <div class="job">
         <div class="logo-chip" aria-hidden="true">
-          <img src="assets/logos/fieldmuseum.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+          <img class="ink-dark" src="assets/logos/fieldmuseum-dark.png" alt="" width="72" height="72" loading="lazy" decoding="async"><img class="ink-light" src="assets/logos/fieldmuseum-light.png" alt="" width="72" height="72" loading="lazy" decoding="async">
         </div>
         <div class="job-body">
           <div class="role-line">
@@ -422,7 +422,7 @@
     <h2><span class="tag">03</span>Education</h2>
     <div class="grid-2">
       <div class="card">
-        <div class="logo-chip" aria-hidden="true"><img src="assets/logos/indstate-mark.svg" alt="" width="48" height="48" loading="lazy" decoding="async"></div>
+        <div class="logo-chip" aria-hidden="true"><img class="ink-dark" src="assets/logos/indstate-seal-dark.svg" alt="" width="72" height="72" loading="lazy" decoding="async"><img class="ink-light" src="assets/logos/indstate-seal-light.svg" alt="" width="72" height="72" loading="lazy" decoding="async"></div>
         <div>
           <div class="deg">M.A. in Geography and Sustainability</div>
           <div class="inst">Indiana State University</div>
@@ -430,7 +430,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="logo-chip" aria-hidden="true"><img src="assets/logos/jadavpur.svg" alt="" width="48" height="48" loading="lazy" decoding="async"></div>
+        <div class="logo-chip" aria-hidden="true"><img src="assets/logos/jadavpur.svg" alt="" width="72" height="72" loading="lazy" decoding="async"></div>
         <div>
           <div class="deg">PG Diploma in GIS and Remote Sensing</div>
           <div class="inst">Jadavpur University</div>
@@ -438,7 +438,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="logo-chip" aria-hidden="true"><img src="assets/logos/ambedkar.png" alt="" width="48" height="48" loading="lazy" decoding="async"></div>
+        <div class="logo-chip" aria-hidden="true"><img src="assets/logos/ambedkar.png" alt="" width="72" height="72" loading="lazy" decoding="async"></div>
         <div>
           <div class="deg">M.A. in Environment and Development</div>
           <div class="inst">Dr. B. R. Ambedkar University Delhi</div>
@@ -446,7 +446,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="logo-chip" aria-hidden="true"><img src="assets/logos/jadavpur.svg" alt="" width="48" height="48" loading="lazy" decoding="async"></div>
+        <div class="logo-chip" aria-hidden="true"><img src="assets/logos/jadavpur.svg" alt="" width="72" height="72" loading="lazy" decoding="async"></div>
         <div>
           <div class="deg">B.A. in History</div>
           <div class="inst">Jadavpur University</div>
